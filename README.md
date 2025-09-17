@@ -111,7 +111,7 @@ haushalts-organizer/
 
 ## Datenschutz
 
-Aktuell werden alle Daten nur lokal im Browser gespeichert. Bei der geplanten Backend-Implementation werden die Daten ausschließlich auf dem lokalen Raspberry Pi Server gespeichert und verlassen nicht das Heimnetzwerk.
+Aktuell werden alle Daten nur lokal im Browser gespeichert. Bei der geplanten Backend-Implementation werden die Daten ausschliesslich auf dem lokalen Raspberry Pi Server gespeichert und verlassen nicht das Heimnetzwerk.
 
 ## Browser-Kompatibilität
 
@@ -128,6 +128,6 @@ Das Projekt ist für Lernzwecke entwickelt worden. Feedback und Verbesserungsvor
 
 Dieses Projekt ist für Bildungszwecke erstellt und unter der MIT Lizenz verfügbar.
 
-## Kontakt
+## Autor
 
-Entwickelt von Alex für das IMS-Praktikum bei Cybersystems GmbH.
+Entwickelt von Alex als persönliches Projekt zur Lösung eines alltäglichen Problems.
