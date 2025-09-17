@@ -12,13 +12,13 @@ const FamilyChoresApp = () => {
 
   const [aufgaben, setAufgaben] = useState([
     { id: 1, name: 'Küche putzen', zustaendig: 'Mama', status: 'erledigt', punkte: 15, faellig: '2025-09-17', kategorie: 'Küche', zeitaufwand: '20 min' },
-    { id: 2, name: 'Müll rausbringen', zustaendig: 'Papa', status: 'offen', punkte: 5, faellig: '2025-09-18', kategorie: 'Außenbereich', zeitaufwand: '5 min' },
+    { id: 2, name: 'Müll rausbringen', zustaendig: 'Papa', status: 'offen', punkte: 5, faellig: '2025-09-18', kategorie: 'Aussenbereich', zeitaufwand: '5 min' },
     { id: 3, name: 'Wäsche waschen', zustaendig: 'Alex (ich)', status: 'in_arbeit', punkte: 10, faellig: '2025-09-17', kategorie: 'Waschküche', zeitaufwand: '10 min' },
     { id: 4, name: 'Staubsaugen Wohnzimmer', zustaendig: 'Alexandra', status: 'überfällig', punkte: 12, faellig: '2025-09-15', kategorie: 'Wohnzimmer', zeitaufwand: '15 min' },
     { id: 5, name: 'Badezimmer putzen', zustaendig: 'Papa', status: 'erledigt', punkte: 20, faellig: '2025-09-16', kategorie: 'Badezimmer', zeitaufwand: '25 min' },
     { id: 6, name: 'Geschirrspüler ausräumen', zustaendig: 'Alex (ich)', status: 'offen', punkte: 3, faellig: '2025-09-18', kategorie: 'Küche', zeitaufwand: '5 min' },
     { id: 7, name: 'Fenster putzen', zustaendig: 'Mama', status: 'offen', punkte: 25, faellig: '2025-09-20', kategorie: 'Wohnzimmer', zeitaufwand: '45 min' },
-    { id: 8, name: 'Garten gießen', zustaendig: 'Alexandra', status: 'erledigt', punkte: 8, faellig: '2025-09-17', kategorie: 'Garten', zeitaufwand: '10 min' }
+    { id: 8, name: 'Garten giessen', zustaendig: 'Alexandra', status: 'erledigt', punkte: 8, faellig: '2025-09-17', kategorie: 'Garten', zeitaufwand: '10 min' }
   ]);
 
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -89,7 +89,7 @@ const FamilyChoresApp = () => {
     { tag: 'So', erledigt: 3 }
   ];
 
-  const aufgabeAbschließen = (aufgabenId) => {
+  const aufgabeAbschliessen = (aufgabenId) => {
     setAufgaben(prev => prev.map(aufgabe => 
       aufgabe.id === aufgabenId 
         ? { ...aufgabe, status: 'erledigt' }
@@ -401,7 +401,7 @@ const FamilyChoresApp = () => {
                         <div className="flex items-center gap-2">
                           {aufgabe.status !== 'erledigt' && (
                             <button 
-                              onClick={() => aufgabeAbschließen(aufgabe.id)}
+                              onClick={() => aufgabeAbschliessen(aufgabe.id)}
                               className="text-green-600 hover:text-green-900 text-sm font-medium"
                             >
                               Erledigt
