@@ -130,4 +130,4 @@ Dieses Projekt ist für Bildungszwecke erstellt und unter der MIT Lizenz verfüg
 
 ## Autor
 
-Entwickelt von Alex als persönliches Projekt zur Lösung eines alltäglichen Problems.
+Edwin Alexander Paucar Vidal
