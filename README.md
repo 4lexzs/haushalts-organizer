@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+# Haushalts-Organizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ein digitaler Aufgaben-Manager für Familien zur besseren Organisation des Haushalts.
 
-## Available Scripts
+## Über das Projekt
 
-In the project directory, you can run:
+Dieses Projekt entstand aus einem persönlichen Problem: Unser handgeschriebener Putzplan an der Küchenwand war unübersichtlich und führte oft zu Verwirrung darüber, wer welche Aufgaben zu erledigen hatte. Der Haushalts-Organizer digitalisiert diese Aufgabenverwaltung und macht sie für alle Familienmitglieder zugänglich und transparent.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Dashboard
+- Übersicht über erledigte, offene und überfällige Aufgaben
+- Familien-Ranking basierend auf Punktesystem
+- Visualisierung der Aufgabenverteilung mit Diagrammen
+- Wöchentliche Aktivitätsübersicht
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Aufgabenverwaltung
+- Aufgaben erstellen, bearbeiten und löschen
+- Zuständigkeiten festlegen und ändern
+- Status-Tracking (offen, in Arbeit, erledigt, überfällig)
+- Kategorisierung nach Bereichen (Küche, Bad, Garten, etc.)
+- Punktesystem zur Motivation
+- Fälligkeitsdaten setzen
 
-### `npm test`
+### Familienverwaltung
+- Familienmitglieder hinzufügen und verwalten
+- Individuelle Avatars auswählen
+- Punktestand pro Person
+- Übersicht der aktuellen Aufgaben je Person
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technische Details
 
-### `npm run build`
+### Frontend
+- **React** - Benutzeroberfläche
+- **Recharts** - Datenvisualisierung
+- **Lucide React** - Icons
+- **CSS3** - Styling (kein Framework-Overhead)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Entwicklungsumgebung
+- Node.js 18+
+- npm Package Manager
+- Git Versionskontrolle
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Voraussetzungen
+- Node.js (Version 18 oder höher)
+- npm
+- Git
 
-### `npm run eject`
+### Projekt einrichten
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Repository klonen
+git clone https://github.com/4lexzs/haushalts-organizer.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# In Projektordner wechseln
+cd haushalts-organizer
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Dependencies installieren
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Entwicklungsserver starten
+npm start
+```
 
-## Learn More
+Die Anwendung läuft dann unter `http://localhost:3000`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Verfügbare Scripts
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Entwicklungsserver starten
+npm start
 
-### Code Splitting
+# Production Build erstellen
+npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Tests ausführen
+npm test
+```
 
-### Analyzing the Bundle Size
+## Projektstruktur
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+haushalts-organizer/
+├── src/
+│   ├── App.js          # Hauptkomponente
+│   ├── index.css       # Styling
+│   └── index.js        # React Entry Point
+├── public/
+├── package.json
+└── README.md
+```
 
-### Making a Progressive Web App
+## Zukünftige Entwicklung
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Geplante Features
+- **Backend-Integration**: Node.js Server mit SQLite Datenbank
+- **Raspberry Pi Deployment**: Lokaler Server für Familiennetzwerk
+- **Push-Benachrichtigungen**: Erinnerungen auf mobile Geräte
+- **Mobile App**: React Native Implementation
+- **Automatische Rotation**: Aufgaben automatisch neu zuweisen
+- **Kalender-Integration**: Synchronisation mit bestehenden Kalendern
 
-### Advanced Configuration
+### Technische Roadmap
+- Migration zu TypeScript für bessere Typsicherheit
+- Unit Tests mit Jest implementieren
+- Progressive Web App (PWA) Features
+- Offline-Funktionalität
+- Multi-Haushalt Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Datenschutz
 
-### Deployment
+Aktuell werden alle Daten nur lokal im Browser gespeichert. Bei der geplanten Backend-Implementation werden die Daten ausschliesslich auf dem lokalen Raspberry Pi Server gespeichert und verlassen nicht das Heimnetzwerk.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Browser-Kompatibilität
 
-### `npm run build` fails to minify
+- Chrome 80+
+- Firefox 74+
+- Safari 13+
+- Edge 80+
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Beitragen
+
+Das Projekt ist für Lernzwecke entwickelt worden. Feedback und Verbesserungsvorschläge sind willkommen.
+
+## Lizenz
+
+Dieses Projekt ist für Bildungszwecke erstellt und unter der MIT Lizenz verfügbar.
+
+## Autor
+
+Edwin Alexander Paucar Vidal
